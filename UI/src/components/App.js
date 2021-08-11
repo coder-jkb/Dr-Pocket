@@ -7,7 +7,7 @@ function App() {
       <div className="flex flex-col justify-center items-center h-screen">
         <h1 className="text-gray-700 text-5xl font-semibold">
           <span className="bg-clip-text text-transparent bg-gradient-to-l to-blue-600 from-gray-700">
-            React+
+            React
           </span>
           {' + '}
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-gray-700 to-teal-400">
