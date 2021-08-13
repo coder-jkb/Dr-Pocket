@@ -2,7 +2,8 @@ import React from 'react'
 import '../styles/styles.css'
 
 function App() {
-  return (
+  return (   
+    
     <div className="container">
       <div className="flex flex-col justify-center items-center h-screen">
         <h1 className="text-gray-700 text-5xl font-semibold">
