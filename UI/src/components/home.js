@@ -48,7 +48,7 @@ function Home() {
             icon="settings"
           ></SidebarItem>
         </div>
-        <div className="p-4 text-xs">Library</div>
+        <div className="p-4 text-xs">LIBRARY</div>
         <div onClick={() => activeSidebar("Favourites")}
             style={{cursor: 'pointer'}}>
           <SidebarItem
