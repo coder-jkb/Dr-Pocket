@@ -23,6 +23,12 @@ function Home() {
   return (
     <div className="flex h-screen">
       <div className="w-48 py-4 pr-4">
+        <div className="flex flex-wrap place-content-center">
+          <svg width="75" height="50"
+            xmlns="http://www.w3.org/2000/svg">
+            <image href="https://svgshare.com/i/_Bo.svg" height="50" width="50"/>
+          </svg>
+        </div>
         <div className="py-4 px-2 text-2xl">Dr Pocket</div>
         <div onClick={() => activeSidebar("Home")}
             style={{cursor: 'pointer'}}>
