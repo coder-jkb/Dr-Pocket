@@ -13,7 +13,7 @@ function Home() {
     } else {
       return false;
     }
-  };
+  }
 
 
   return (
