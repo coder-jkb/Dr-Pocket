@@ -24,10 +24,13 @@ const features = [
   },
 ]
 
-export default function Features() {
+export default function Features(props) {
+  let className = 'py-12 bg-white ';
+  className += props.isActive ? '' : 'hidden';
+
   return (
     
-    <div className="py-12 bg-white">
+    <div className={className}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
           <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Features</h2>
