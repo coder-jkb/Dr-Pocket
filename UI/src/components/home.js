@@ -3,6 +3,7 @@ import SidebarItem from "../widgets/sidebar-item";
 import FeatherIcon from "feather-icons-react";
 import Features from "./features";
 import Dashboard from "./dashboard";
+import { ReactSVG } from "react-svg";
 
 function Home() {
   const [sidebar, activeSidebar] = useState("Home");
@@ -18,16 +19,9 @@ function Home() {
 
   return (
     <div className="flex h-screen">
-      <div className="flex flex-col bg-gray-100 items-center w-28 py-4 pr-4">
-        <div className="flex flex-wrap place-content-center">
-          <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
-            <image
-              href="https://svgshare.com/i/_Bo.svg"
-              height="50"
-              width="50"
-            />
-          </svg>
-        </div>
+      <div className="hidden md:flex flex-col bg-gray-100 items-center w-28 py-4 pr-2 text-center justify-center content-center">
+      <div className="ml-4 mt-2"><ReactSVG src="Dr-PocketLogo.svg"/></div>
+      
         <div
           onClick={() => activeSidebar("Home")}
           style={{ cursor: "pointer" }}
@@ -70,7 +64,7 @@ function Home() {
         </div>
       </div>
       <div className="flex flex-col w-screen">
-        <div className="p-4 bg-gray-100 flex flex-row justify-between">
+        <div className="p-4 bg-gray-100 hidden md:flex flex-row justify-between">
           <div className="relative flex w-6/12 flex-wrap items-stretch mb-3">
             <span className="z-10 h-full leading-snug font-normal absolute text-center text-blueGray-300 absolute bg-transparent rounded-fulll text-base items-center justify-center m-2">
               <FeatherIcon icon="search" color="gray" />
